@@ -61,7 +61,8 @@ var wbConfig = {
     loaders: [
       // { test: /\.html$/, loader: 'html' },
       { test: /\.html$/, loader: 'underscore-template-loader' },
-      { test: /\.css|less$/, loader: 'style!css!postcss-loader!less?' + JSON.stringify(lessVars) }
+      { test: /\.css|less$/, loader: 'style!css!postcss-loader!less?' + JSON.stringify(lessVars) },
+      { test: /\.json$/, loader: 'json-loader' }
       // { test: /\.css|less$/, loader: 'style-loader!css-loader!postcss-loader!less-loader' },
     ]
   },

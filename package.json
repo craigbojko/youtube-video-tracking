@@ -1,8 +1,8 @@
 {
-  "name": "RFC0xxx_CAMPAIGN",
-  "rfc": "RFC0xxx",
+  "name": "Youtube-Video-Tracking",
+  "rfc": "YVT",
   "version": "1.0.0",
-  "description": "Experian CreditExpert",
+  "description": "Wrapper around Youtube iFrame API to add custom analytics tracking to different player states.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,17 +14,18 @@
     "lodash": "^4.15.0"
   },
   "devDependencies": {
-    "html-loader": "^0.4.3",
-    "style-loader": "^0.13.1",
-    "css-loader": "^0.23.1",
     "autoprefixer": "^6.4.1",
-    "precss": "^1.4.0",
-    "postcss-loader": "^0.13.0",
+    "css-loader": "^0.23.1",
+    "html-loader": "^0.4.3",
+    "json-loader": "^0.5.4",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    "underscore-template-loader": "^0.7.3",
-    "webpack-livereload-plugin": "^0.8.1",
+    "postcss-loader": "^0.13.0",
+    "precss": "^1.4.0",
     "smart-banner-webpack-plugin": "^2.0.0",
-    "standard-format": "^2.2.3"
+    "standard-format": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "underscore-template-loader": "^0.7.3",
+    "webpack-livereload-plugin": "^0.8.1"
   }
 }

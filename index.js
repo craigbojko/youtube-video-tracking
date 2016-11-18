@@ -2,7 +2,7 @@
 * @Author: Craig Bojko (Craig Bojko)
 * @Date:   2016-09-05 11:39:18
 * @Last Modified by:   Craig Bojko (Craig Bojko)
-* @Last Modified time: 2016-09-27 09:55:55
+* @Last Modified time: 2016-11-18 16:00:34
 */
 
 /* globals mboxTrack */
@@ -11,7 +11,9 @@ var ns = process.env.RFC_NAMESPACE
 var env = process.env.NODE_ENV
 
 require('./styles/main.less')
-var $ = window.jQuery || require('jquery')
+
+var $
+var config = require('./config')
 var html = require('./templates/main.html')
 var Poller = require('./js/util/poller')
 var domDependancies = [
@@ -22,7 +24,15 @@ var domDependancies = [
 console.group()
 console.info('RFC: %s', ns)
 console.info('ENV: %s', env)
-Poller($, domDependancies, init)
+if (config && config.jquery && config.jquery === true) {
+  $ = require('jquery')
+  Poller($, domDependancies, init)
+} else {
+  Poller(domDependancies, function () {
+    $ = window.jQuery
+    init()
+  })
+}
 console.groupEnd()
 
 /**
@@ -30,5 +40,6 @@ console.groupEnd()
  * @return {void} - return not necessary
  */
 function init () {
+  console.log(config)
   $('body').show()
 }

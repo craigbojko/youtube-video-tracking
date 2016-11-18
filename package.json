@@ -1,0 +1,30 @@
+{
+  "name": "RFC0xxx_CAMPAIGN",
+  "rfc": "RFC0xxx",
+  "version": "1.0.0",
+  "description": "Experian CreditExpert",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Craig Bojko",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "lodash": "^4.15.0"
+  },
+  "devDependencies": {
+    "html-loader": "^0.4.3",
+    "style-loader": "^0.13.1",
+    "css-loader": "^0.23.1",
+    "autoprefixer": "^6.4.1",
+    "precss": "^1.4.0",
+    "postcss-loader": "^0.13.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "underscore-template-loader": "^0.7.3",
+    "webpack-livereload-plugin": "^0.8.1",
+    "smart-banner-webpack-plugin": "^2.0.0",
+    "standard-format": "^2.2.3"
+  }
+}

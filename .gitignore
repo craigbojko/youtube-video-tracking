@@ -1,3 +1,4 @@
 node_modules/
 build/
 .phpintel
+config.js

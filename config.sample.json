@@ -1,0 +1,11 @@
+{
+  "jquery": true,
+  "targetInsertBefore": "<selector>",
+  "height": "390",
+  "width": "640",
+  "videoId": "<id>",
+  "events": [
+    "onReady",
+    "onStateChange"
+  ]
+}
